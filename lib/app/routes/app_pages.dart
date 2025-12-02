@@ -4,13 +4,15 @@ import '../modules/custom_bottom_navigation_bar/bindings/custom_bottom_navigatio
 import '../modules/custom_bottom_navigation_bar/views/custom_bottom_navigation_bar_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
+import '../modules/splash/bindings/splash_binding.dart';
+import '../modules/splash/views/splash_view.dart';
 
 part 'app_routes.dart';
 
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.CUSTOM_BOTTOM_NAVIGATION_BAR;
+  static const INITIAL = Routes.SPLASH;
 
   static final routes = [
     GetPage(
@@ -22,6 +24,11 @@ class AppPages {
       name: _Paths.CUSTOM_BOTTOM_NAVIGATION_BAR,
       page: () => const CustomBottomNavigationBarView(),
       binding: CustomBottomNavigationBarBinding(),
+    ),
+    GetPage(
+      name: _Paths.SPLASH,
+      page: () => const SplashView(),
+      binding: SplashBinding(),
     ),
   ];
 }
