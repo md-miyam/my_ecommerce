@@ -17,11 +17,12 @@ class OnboardingView extends GetView<OnboardingController> {
         height: 100.h,
         decoration: BoxDecoration(color: AppColors.whiteColor),
         child: Center(
-          child: InkWell(
+          child: CustomButton(
             onTap: () {
               Get.offAllNamed(Routes.SIGN_UP);
             },
-            child: CustomButton(text: 'Get Started',),
+            buttonMargin: 22,
+            text: 'Get Started',
           ),
         ),
       ),

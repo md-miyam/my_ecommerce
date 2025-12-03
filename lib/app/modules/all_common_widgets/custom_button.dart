@@ -7,6 +7,7 @@ class CustomButton extends StatelessWidget {
   final double? textFontSize;
   final double? height;
   final double? width;
+  final double? buttonMargin;
   final double? verticalChildPadding;
   final String? prefixIcon;
   final double? prefixIconHeight;
@@ -33,7 +34,7 @@ class CustomButton extends StatelessWidget {
     this.suffixIconHeight,
     this.textFontSize,
     this.borderRadius,
-    this.onTap,
+    this.onTap, this.buttonMargin,
   });
 
   @override
@@ -41,6 +42,7 @@ class CustomButton extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Container(
+        margin: EdgeInsets.symmetric(horizontal: buttonMargin?.w ?? 0),
         width: width ?? double.infinity,
         decoration: BoxDecoration(
           color: color ?? AppColors.blackColor,
