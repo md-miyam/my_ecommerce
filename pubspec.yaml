@@ -45,6 +45,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
@@ -81,61 +82,44 @@ flutter:
   # example:
   # fonts:
   fonts:
-    - family: Nunito
+    - family: GeneralSans
       fonts:
-        - asset: assets/font/Nunito-ExtraLight.ttf
+        - asset: assets/font/GeneralSans-Extralight.otf
           weight: 200
-        - asset: assets/font/Nunito-ExtraLightItalic.ttf
+        - asset: assets/font/GeneralSans-ExtralightItalic.otf
           weight: 200
           style: italic
 
-        - asset: assets/font/Nunito-Light.ttf
+        - asset: assets/font/GeneralSans-Light.otf
           weight: 300
-        - asset: assets/font/Nunito-LightItalic.ttf
+        - asset: assets/font/GeneralSans-LightItalic.otf
           weight: 300
           style: italic
 
-        - asset: assets/font/Nunito-Regular.ttf
+        - asset: assets/font/GeneralSans-Regular.otf
           weight: 400
-        - asset: assets/font/Nunito-Italic.ttf
+        - asset: assets/font/GeneralSans-Italic.otf
           weight: 400
           style: italic
 
-        - asset: assets/font/Nunito-Medium.ttf
+        - asset: assets/font/GeneralSans-Medium.otf
           weight: 500
-        - asset: assets/font/Nunito-MediumItalic.ttf
+        - asset: assets/font/GeneralSans-MediumItalic.otf
           weight: 500
           style: italic
 
-        - asset: assets/font/Nunito-SemiBold.ttf
+        - asset: assets/font/GeneralSans-Semibold.otf
           weight: 600
-        - asset: assets/font/Nunito-SemiBoldItalic.ttf
+        - asset: assets/font/GeneralSans-SemiboldItalic.otf
           weight: 600
           style: italic
 
-        - asset: assets/font/Nunito-Bold.ttf
+        - asset: assets/font/GeneralSans-Bold.otf
           weight: 700
-        - asset: assets/font/Nunito-BoldItalic.ttf
+        - asset: assets/font/GeneralSans-BoldItalic.otf
           weight: 700
           style: italic
 
-        - asset: assets/font/Nunito-ExtraBold.ttf
-          weight: 800
-        - asset: assets/font/Nunito-ExtraBoldItalic.ttf
-          weight: 800
-          style: italic
-
-        - asset: assets/font/Nunito-Black.ttf
-          weight: 900
-        - asset: assets/font/Nunito-BlackItalic.ttf
-          weight: 900
-          style: italic
-
-    - family: Feather
-
-      fonts:
-        - asset: assets/font/Feather-Bold.ttf
-          weight: 700
 
   #
   # For details regarding fonts from package dependencies,

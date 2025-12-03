@@ -1,23 +1,14 @@
 import 'package:get/get.dart';
+import 'dart:async';
+
+import 'package:my_ecommerce/app/modules/onboarding/views/onboarding_view.dart';
 
 class SplashController extends GetxController {
-  //TODO: Implement SplashController
-
-  final count = 0.obs;
   @override
   void onInit() {
     super.onInit();
+    Timer(const Duration(seconds: 3), () {
+      Get.off(() => OnboardingView());
+    });
   }
-
-  @override
-  void onReady() {
-    super.onReady();
-  }
-
-  @override
-  void onClose() {
-    super.onClose();
-  }
-
-  void increment() => count.value++;
 }
