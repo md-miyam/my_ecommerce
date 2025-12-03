@@ -21,9 +21,27 @@ class SignUpView extends GetView<SignUpController> {
                 "Let’s create your account.",
                 style: AppTextStyles.regular16,
               ),
-              SizedBox(height: 24.h,),
-              Text("Full Name",style: AppTextStyles.medium16,),
-              TextFormField(style: TextStyle(),)
+              SizedBox(height: 24.h),
+              Text("Full Name", style: AppTextStyles.medium16),
+              TextFormField(
+                decoration: InputDecoration(
+                  hintText: "Enter your full name",
+                  suffix: Icon(
+                    Icons.remove_red_eye_outlined,
+                  ),
+                ),
+              ),
+              SizedBox(height: 16.h,),
+              Text("Email",style: AppTextStyles.medium16,),
+              TextFormField(
+                decoration: InputDecoration(
+                  hintText: "Enter your full name",
+                  suffix: Icon(
+                    Icons.remove_red_eye_outlined,
+                  ),
+                ),
+              ),
+
             ],
           ),
         ),
