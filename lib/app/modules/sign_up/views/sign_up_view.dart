@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:my_ecommerce/app/data/app_text_styles.dart';
+import 'package:my_ecommerce/app/data/icon_path.dart';
+import '../../all_common_widgets/custom_button.dart';
 import '../controllers/sign_up_controller.dart';
 
 class SignUpView extends GetView<SignUpController> {
@@ -41,6 +43,8 @@ class SignUpView extends GetView<SignUpController> {
                   ),
                 ),
               ),
+
+
 
             ],
           ),

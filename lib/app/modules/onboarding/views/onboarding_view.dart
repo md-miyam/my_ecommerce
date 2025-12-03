@@ -21,7 +21,7 @@ class OnboardingView extends GetView<OnboardingController> {
             onTap: () {
               Get.offAllNamed(Routes.SIGN_UP);
             },
-            child: CustomButton(text: 'Get Started', icon: Icons.arrow_forward),
+            child: CustomButton(text: 'Get Started',),
           ),
         ),
       ),
