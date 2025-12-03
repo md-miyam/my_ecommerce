@@ -8,6 +8,7 @@ class IconPath {
   static const String savedIcon = '$baseUrl/saved_icon.png';
   static const String splashIcon = '$baseUrl/splash_icon.png';
   static const String facebookLogo = '$baseUrl/facebook_logo.png';
+  static const String loveIcon = '$baseUrl/love_icon.png';
 
 
 }

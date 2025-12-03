@@ -9,6 +9,8 @@ abstract class Routes {
   static const SPLASH = _Paths.SPLASH;
   static const ONBOARDING = _Paths.ONBOARDING;
   static const SIGN_UP = _Paths.SIGN_UP;
+  static const SAVED_ITEMS_EMPTY = _Paths.SAVED_ITEMS_EMPTY;
+  static const REVIEWS = _Paths.REVIEWS;
 }
 
 abstract class _Paths {
@@ -18,4 +20,6 @@ abstract class _Paths {
   static const SPLASH = '/splash';
   static const ONBOARDING = '/onboarding';
   static const SIGN_UP = '/sign-up';
+  static const SAVED_ITEMS_EMPTY = '/saved-items-empty';
+  static const REVIEWS = '/reviews';
 }

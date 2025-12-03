@@ -81,6 +81,7 @@ abstract class AppTextStyles {
   static TextStyle get regular24 => TextStyle(fontSize: 24.sp, fontWeight: FontWeight.w400);
   static TextStyle get medium24 => TextStyle(fontSize: 24.sp, fontWeight: FontWeight.w500);
   static TextStyle get bold24 => TextStyle(fontSize: 24.sp, fontWeight: FontWeight.w600);
+  static TextStyle get bold64 => TextStyle(fontSize: 64.sp, fontWeight: FontWeight.w600);
 
   static TextStyle get light26 => TextStyle(fontSize: 26.sp, fontWeight: FontWeight.w300);
   static TextStyle get regular26 => TextStyle(fontSize: 26.sp, fontWeight: FontWeight.w400);

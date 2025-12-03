@@ -1,11 +1,15 @@
 import 'package:get/get.dart';
 
+import '../modules/Reviews/bindings/reviews_binding.dart';
+import '../modules/Reviews/views/reviews_view.dart';
 import '../modules/custom_bottom_navigation_bar/bindings/custom_bottom_navigation_bar_binding.dart';
 import '../modules/custom_bottom_navigation_bar/views/custom_bottom_navigation_bar_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/onboarding/bindings/onboarding_binding.dart';
 import '../modules/onboarding/views/onboarding_view.dart';
+import '../modules/saved_items_empty/bindings/saved_items_empty_binding.dart';
+import '../modules/saved_items_empty/views/saved_items_empty_view.dart';
 import '../modules/sign_up/bindings/sign_up_binding.dart';
 import '../modules/sign_up/views/sign_up_view.dart';
 import '../modules/splash/bindings/splash_binding.dart';
@@ -16,7 +20,7 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.SPLASH;
+  static const INITIAL = Routes.REVIEWS;
 
   static final routes = [
     GetPage(
@@ -43,6 +47,16 @@ class AppPages {
       name: _Paths.SIGN_UP,
       page: () => const SignUpView(),
       binding: SignUpBinding(),
+    ),
+    GetPage(
+      name: _Paths.SAVED_ITEMS_EMPTY,
+      page: () => const SavedItemsEmptyView(),
+      binding: SavedItemsEmptyBinding(),
+    ),
+    GetPage(
+      name: _Paths.REVIEWS,
+      page: () => const ReviewsView(),
+      binding: ReviewsBinding(),
     ),
   ];
 }
