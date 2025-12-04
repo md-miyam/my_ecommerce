@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../modules/Details/bindings/details_binding.dart';
+import '../modules/Details/views/details_view.dart';
 import '../modules/Reviews/bindings/reviews_binding.dart';
 import '../modules/Reviews/views/reviews_view.dart';
 import '../modules/custom_bottom_navigation_bar/bindings/custom_bottom_navigation_bar_binding.dart';
@@ -20,7 +22,7 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.REVIEWS;
+  static const INITIAL = Routes.DETAILS;
 
   static final routes = [
     GetPage(
@@ -57,6 +59,11 @@ class AppPages {
       name: _Paths.REVIEWS,
       page: () => const ReviewsView(),
       binding: ReviewsBinding(),
+    ),
+    GetPage(
+      name: _Paths.DETAILS,
+      page: () => const DetailsView(),
+      binding: DetailsBinding(),
     ),
   ];
 }

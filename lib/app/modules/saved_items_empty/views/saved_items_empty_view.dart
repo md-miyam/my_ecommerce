@@ -5,6 +5,8 @@ import 'package:get/get.dart';
 import 'package:my_ecommerce/app/data/app_text_styles.dart';
 import 'package:my_ecommerce/app/data/icon_path.dart';
 import 'package:my_ecommerce/app/data/image_path.dart';
+import 'package:my_ecommerce/app/modules/all_common_widgets/custom_app_bar.dart';
+import 'package:my_ecommerce/app/modules/all_common_widgets/custom_notification_button.dart';
 
 import '../controllers/saved_items_empty_controller.dart';
 
@@ -13,7 +15,7 @@ class SavedItemsEmptyView extends GetView<SavedItemsEmptyController> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold(appBar: CustomAppBar(title: "Saved Items",actions: [CustomNotificationButton()],),
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.all(24.sp),
