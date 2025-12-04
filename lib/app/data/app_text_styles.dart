@@ -126,6 +126,7 @@ abstract class AppTextStyles {
   static TextStyle get featherBold14 => TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w700,fontFamily: 'Feather',color: AppColors.blackColor);
   static TextStyle get featherBold16 => TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w700,fontFamily: 'Feather',color: AppColors.blackColor);
   static TextStyle get featherBold20 => TextStyle(fontSize: 20.sp, fontWeight: FontWeight.w700,fontFamily: 'Feather',color: AppColors.blackColor);
+  static TextStyle get featherBold22 => TextStyle(fontSize: 22.sp, fontWeight: FontWeight.w700,fontFamily: 'Feather',color: AppColors.blackColor);
   static TextStyle get featherBold24 => TextStyle(fontSize: 24.sp, fontWeight: FontWeight.w700,fontFamily: 'Feather',color: AppColors.blackColor);
   static TextStyle get featherBold32 => TextStyle(fontSize: 32.sp, fontWeight: FontWeight.w900,fontFamily: 'Feather',color: AppColors.blackColor);
 

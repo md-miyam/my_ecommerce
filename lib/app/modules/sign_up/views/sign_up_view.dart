@@ -16,14 +16,7 @@ class SignUpView extends GetView<SignUpController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(
-        title: "App bar",
-        actions: [
-          CustomNotificationButton(
-            onTap: (){
-
-            },
-          )
-        ],
+        title: "App Bar",
       ),
       body: SafeArea(
         child: Padding(
@@ -37,7 +30,10 @@ class SignUpView extends GetView<SignUpController> {
                 style: AppTextStyles.regular16,
               ),
           
-              CustomTextField(),
+              CustomTextField(
+                topHintText: "Email",
+                hintText: "Enter your email",
+              ),
           
           
           
