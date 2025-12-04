@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:my_ecommerce/app/data/app_text_styles.dart';
-import 'package:my_ecommerce/app/modules/all_common_widgets/custom_notification_button.dart';
 import '../../all_common_widgets/custom_app_bar.dart';
 import '../../all_common_widgets/custom_text_field.dart';
 import '../controllers/sign_up_controller.dart';
@@ -13,6 +12,9 @@ class SignUpView extends GetView<SignUpController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: CustomAppBar(
+        title: "App Bar",
+      ),
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 14.sp,vertical: 6.sp),
@@ -24,11 +26,14 @@ class SignUpView extends GetView<SignUpController> {
                 "Let’s create your account.",
                 style: AppTextStyles.regular16,
               ),
-
-              CustomTextField(),
-
-
-
+          
+              CustomTextField(
+                topHintText: "Email",
+                hintText: "Enter your email",
+              ),
+          
+          
+          
             ],
           ),
         ),
