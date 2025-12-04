@@ -69,6 +69,8 @@ class CustomButton extends StatelessWidget {
                   fontWeight: FontWeight.w500,
                   color: textColor ?? AppColors.whiteColor,
                 ),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
               ),
             ),
             if (suffixIcon != null) SizedBox(width: 10.w),
