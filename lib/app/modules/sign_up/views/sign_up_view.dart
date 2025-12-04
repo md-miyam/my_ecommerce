@@ -13,16 +13,6 @@ class SignUpView extends GetView<SignUpController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(
-        title: "App bar",
-        actions: [
-          CustomNotificationButton(
-            onTap: (){
-
-            },
-          )
-        ],
-      ),
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 14.sp,vertical: 6.sp),
