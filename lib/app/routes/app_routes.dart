@@ -12,6 +12,9 @@ abstract class Routes {
   static const SAVED_ITEMS_EMPTY = _Paths.SAVED_ITEMS_EMPTY;
   static const REVIEWS = _Paths.REVIEWS;
   static const DETAILS = _Paths.DETAILS;
+  static const LOGIN = _Paths.LOGIN;
+  static const FORGOT_PASSWORD = _Paths.FORGOT_PASSWORD;
+  static const VARIFICATION_CORD = _Paths.VARIFICATION_CORD;
 }
 
 abstract class _Paths {
@@ -24,4 +27,7 @@ abstract class _Paths {
   static const SAVED_ITEMS_EMPTY = '/saved-items-empty';
   static const REVIEWS = '/reviews';
   static const DETAILS = '/details';
+  static const LOGIN = '/login';
+  static const FORGOT_PASSWORD = '/forgot-password';
+  static const VARIFICATION_CORD = '/varification-cord';
 }

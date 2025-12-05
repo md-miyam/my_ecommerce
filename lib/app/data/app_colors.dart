@@ -8,6 +8,7 @@ class AppColors{
   static const Color dividerColor = Color(0xffE6E6E6);
   static const Color starColor = Color(0xffffa928);
   static const Color detailsSize = Color(0xffd9d9d9);
+  static const Color blueColor = Color(0xff1877f2);
 
 
 }

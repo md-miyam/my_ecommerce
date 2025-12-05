@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:my_ecommerce/app/data/app_colors.dart';
-import 'package:my_ecommerce/app/data/app_text_styles.dart';
-import 'package:my_ecommerce/app/data/icon_path.dart';
-import 'package:my_ecommerce/app/modules/all_common_widgets/custom_button.dart';
-import 'package:my_ecommerce/app/modules/all_common_widgets/custom_divider.dart';
-import '../../all_common_widgets/custom_app_bar.dart';
+import '../../../data/app_colors.dart';
+import '../../../data/app_text_styles.dart';
+import '../../../data/icon_path.dart';
+import '../../all_common_widgets/custom_button.dart';
+import '../../all_common_widgets/custom_divider.dart';
 import '../../all_common_widgets/custom_text_field.dart';
-import '../controllers/sign_up_controller.dart';
+import '../controllers/login_controller.dart';
 
-class SignUpView extends GetView<SignUpController> {
-  const SignUpView({super.key});
+class LoginView extends GetView<LoginController> {
+  const LoginView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,17 +22,17 @@ class SignUpView extends GetView<SignUpController> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Create an account', style: AppTextStyles.featherBold32),
                 Text(
-                  "Let’s create your account.",
+                  'Login to your account',
+                  style: AppTextStyles.featherBold28,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                ),
+                Text(
+                  "It’s great to see you again.",
                   style: AppTextStyles.regular16,
                 ),
-                SizedBox(height: 15.h),
-                CustomTextField(
-                  topHintText: "Full Name",
-                  hintText: "Enter your full name",
-                ),
-                SizedBox(height: 15.h),
+                SizedBox(height: 24.h),
                 CustomTextField(
                   topHintText: "Email",
                   hintText: "Enter your email address",
@@ -44,42 +43,24 @@ class SignUpView extends GetView<SignUpController> {
                   hintText: "Enter your password",
                   icon: Icons.remove_red_eye_outlined,
                 ),
-                SizedBox(height: 15.h),
-                RichText(
-                  text: TextSpan(
-                    text: "By signing up you agree to our",
-                    style: AppTextStyles.regular14.copyWith(
-                      color: AppColors.blackColor,
+                SizedBox(height: 10.h),
+                Row(
+                  children: [
+                    Text(
+                      "Forgot your password?",
+                      style: AppTextStyles.regular14,
                     ),
-                    children: <TextSpan>[
-                      TextSpan(
-                        text: " Terms, Privacy Policy, ",
-                        style: AppTextStyles.bold14.copyWith(
-                          color: AppColors.blackColor,
-                          decoration: TextDecoration.underline,
-                        ),
+                    GestureDetector(
+                      onTap: () {},
+                      child: Text(
+                        "Reset your password",
+                        style: AppTextStyles.bold14,
                       ),
-                      TextSpan(
-                        text: "and ",
-                        style: AppTextStyles.regular14.copyWith(
-                          color: AppColors.blackColor,
-                        ),
-                      ),
-                      TextSpan(
-                        text: " Cookie Use ",
-                        style: AppTextStyles.bold14.copyWith(
-                          color: AppColors.blackColor,
-                          decoration: TextDecoration.underline,
-                        ),
-                      ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
                 SizedBox(height: 24.h),
-                CustomButton(
-                  text: "Create an Account",
-                  color: AppColors.hintTextColor,
-                ),
+                CustomButton(text: "Login", color: AppColors.hintTextColor),
                 SizedBox(height: 24.h),
                 Row(
                   children: [
@@ -98,14 +79,14 @@ class SignUpView extends GetView<SignUpController> {
                   color: AppColors.whiteColor,
                   borderColor: AppColors.bordarColor,
                 ),
-                SizedBox(height: 24.h),
+                SizedBox(height: 16.h),
                 CustomButton(
                   text: "Sign Up with Facebook ",
                   textColor: AppColors.whiteColor,
                   prefixIcon: IconPath.facebookLogo,
                   color: AppColors.blueColor,
                 ),
-                SizedBox(height: 24.h),
+                SizedBox(height: 100.h),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,

@@ -11,6 +11,7 @@ class IconPath {
   static const String facebookLogo = '$baseUrl/facebook_logo.png';
   static const String loveIcon = '$baseUrl/love_icon.png';
   static const String bagIcon = '$baseUrl/Bag_Icon.png';
+  static const String googleIcon = '$baseUrl/google-icon.png';
 
 
 }
