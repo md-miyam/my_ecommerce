@@ -21,29 +21,29 @@ class DetailsView extends GetView<DetailsController> {
         actions: [CustomNotificationButton()],
       ),
       bottomNavigationBar: Container(
-        height: 80.h,
-        width: double.infinity,
+        height: Get.height *.09,
         decoration: BoxDecoration(
           color: AppColors.whiteColor,
-          border: Border.all(color: AppColors.detailsSize),
+          border: Border.all(color: AppColors.dividerColor),
         ),
         child: Padding(
-          padding: EdgeInsets.only(left: 20.w, top: 10.h),
+          padding: EdgeInsets.symmetric(horizontal: 16.w),
           child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("Price", style: AppTextStyles.regular16),
-                  Text("\$1,190", style: AppTextStyles.bold24),
+                  Flexible(child: Text("Price", style: AppTextStyles.regular16)),
+                  Flexible(child: Text("\$1,190", style: AppTextStyles.bold20.copyWith(),maxLines: 1,overflow: TextOverflow.ellipsis,)),
                 ],
-              ),SizedBox(width: 20.w,),
+              ),
+             SizedBox(width: 30.w,),
               CustomButton(
                 text: "Add to Cart",
                 prefixIcon: IconPath.bagIcon,
-                height: 54.h,
-                width: 240.h,
+                width: Get.width *.450.w,
               ),
             ],
           ),
@@ -87,7 +87,8 @@ class DetailsView extends GetView<DetailsController> {
                 ),
                 SizedBox(height: 10.h),
                 Text("Regular Fit Slogan", style: AppTextStyles.featherBold24),
-                InkWell(onTap: () {},
+                InkWell(
+                  onTap: () {},
                   child: Row(
                     children: [
                       Icon(Icons.star, color: AppColors.starColor),

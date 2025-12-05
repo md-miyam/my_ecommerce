@@ -34,7 +34,8 @@ class CustomButton extends StatelessWidget {
     this.suffixIconHeight,
     this.textFontSize,
     this.borderRadius,
-    this.onTap, this.buttonMargin,
+    this.onTap,
+    this.buttonMargin,
   });
 
   @override
@@ -53,29 +54,40 @@ class CustomButton extends StatelessWidget {
           ),
         ),
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             if (prefixIcon != null)
-              Image.asset(prefixIcon!, height: prefixIconHeight?.h ?? 20.h),
-            if (prefixIcon != null) SizedBox(width: 10.w),
-            Padding(
-              padding: EdgeInsets.symmetric(
-                vertical: verticalChildPadding ?? 12.h,
-              ),
-              child: Text(
-                text,
-                style: TextStyle(
-                  fontSize: textFontSize ?? 16.sp,
-                  fontWeight: FontWeight.w500,
-                  color: textColor ?? AppColors.whiteColor,
+              Flexible(
+                child: Image.asset(
+                  prefixIcon!,
+                  height: prefixIconHeight?.h ?? 20.h,
                 ),
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
+              ),
+            Flexible(
+              child: Padding(
+                padding: EdgeInsets.symmetric(
+                  vertical: verticalChildPadding ?? 12.h,
+                ),
+                child: Text(
+                  text,
+                  style: TextStyle(
+                    fontSize: textFontSize ?? 16.sp,
+                    fontWeight: FontWeight.w500,
+                    color: textColor ?? AppColors.whiteColor,
+                  ),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                ),
               ),
             ),
-            if (suffixIcon != null) SizedBox(width: 10.w),
             if (suffixIcon != null)
-              Image.asset(suffixIcon!, height: suffixIconHeight?.h ?? 20.h),
+              Flexible(
+                child: Image.asset(
+                  suffixIcon!,
+                  height: suffixIconHeight?.h ?? 20.h,
+                ),
+              ),
           ],
         ),
       ),
