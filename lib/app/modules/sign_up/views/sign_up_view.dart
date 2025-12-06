@@ -32,6 +32,7 @@ class SignUpView extends GetView<SignUpController> {
                 CustomTextField(
                   topHintText: "Full Name",
                   hintText: "Enter your full name",
+
                 ),
                 SizedBox(height: 15.h),
                 CustomTextField(

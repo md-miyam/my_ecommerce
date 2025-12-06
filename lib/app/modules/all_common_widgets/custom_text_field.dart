@@ -7,8 +7,10 @@ class CustomTextField extends StatelessWidget {
   final String topHintText;
   final String? hintText;
   final IconData? icon;
+  final TextEditingController? controller;
+  final String? Function(String?)?validation;
 
-  const CustomTextField({super.key, required this.topHintText, this.hintText, this.icon});
+  const CustomTextField({super.key, required this.topHintText, this.hintText, this.icon, this.controller, this.validation});
 
   @override
   Widget build(BuildContext context) {
@@ -19,6 +21,8 @@ class CustomTextField extends StatelessWidget {
         Text(topHintText, style: AppTextStyles.medium16),
         SizedBox(height: 2.h),
         TextFormField(
+          controller:controller ,
+          validator:validation ,
           cursorColor: AppColors.blackColor,
           cursorHeight: 20,
           cursorWidth: 1.6,
